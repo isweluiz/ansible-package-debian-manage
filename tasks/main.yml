@@ -46,4 +46,3 @@
     - name: "{{ role_name }} :: Dump when errors"
       debug:
         msg: "I caught an error, check is there is some miss system configuration to fix it."
-

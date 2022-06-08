@@ -1,6 +1,5 @@
 ---
 # tasks file for  isweluiz.ansible-package-manage
-
 - block: 
     - name: "Update :: Package list to Update" 
       debug:
