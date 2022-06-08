@@ -95,6 +95,6 @@ MIT
 
 Author Information
 ------------------
-
+- [Ansible Galaxy](https://galaxy.ansible.com/isweluiz)
 - [Github](https://github.com/isweluiz)
 - [Linkedin](https://www.linkedin.com/in/isweluiz)
