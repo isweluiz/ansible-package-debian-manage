@@ -1,7 +1,5 @@
 galaxy_info:
-  author: VoiceOps Team
-  description: Voice Role to manage system packages 
+  author: isweluiz
+  description: Debian Role to manage system packages 
   company: Bandwidth 
-
   min_ansible_version: 2.9
-

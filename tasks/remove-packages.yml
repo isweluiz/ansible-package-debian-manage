@@ -12,7 +12,7 @@
       register: base_package_check
       changed_when: false
       ignore_errors: true
-
+      
     - name: "Remove :: Removing Package List"
       package: 
         name: "{{ item }}" 

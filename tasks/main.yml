@@ -37,11 +37,9 @@
       tags:
         - security
         - never        
-
   when: 
     - voice_package_manage is defined and voice_package_manage|bool 
     - ansible_facts['os_family'] == "Debian"
-
   rescue:
     - name: "{{ role_name }} :: Dump when errors"
       debug:

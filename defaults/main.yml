@@ -1,6 +1,4 @@
 ---
 # defaults file for voice-package-manage
-
 role_name: "voice-package-manage"
 voice_package_manage: true 
-
