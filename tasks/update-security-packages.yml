@@ -1,6 +1,5 @@
 ---
 # tasks file for  isweluiz.ansible-package-manage
-
 - block: 
     - name: "Security :: Update apt cache"
       apt:
