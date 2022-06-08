@@ -2,6 +2,7 @@ Ansible Role System Package Manage
 =========
 Ansible role for managing **Debian** system packages: 
 
+- install
 - update
 - update security
 - clean
