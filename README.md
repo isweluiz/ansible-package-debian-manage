@@ -1,5 +1,6 @@
 [![Ansible Role](https://img.shields.io/ansible/quality/27842.svg)](https://galaxy.ansible.com/isweluiz/ansible_package_debian_manage)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/isweluiz/ansible-role-manage-system/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/isweluiz/ansible-package-debian-manage
+/blob/master/LICENSE)
 
 ansible_package_debian_manage
 =========
