@@ -1,0 +1,15 @@
+---
+# tasks file for  isweluiz.ansible-package-manage
+
+- block: 
+    - name: "Security :: Update apt cache"
+      apt:
+        update_cache: yes
+      become: true
+
+    - name: "Security :: Update security packages"
+      apt:
+        upgrade: safe
+      become: true
+  tags:
+    - security

@@ -1,0 +1,24 @@
+---
+# vars file for voice-package-manage
+
+# Install 
+# List the packages that should be installed here, one per line. Be sure to remove the '[]'
+base_system_packages_install: 
+  - doscan
+  - ncat
+  - nmap
+
+# Remove 
+# List the packages that should be removed here, one per line. Be sure to remove the '[]'
+base_system_packages_remove: 
+  - doscan
+  - ncat
+  - nmap
+
+# Update 
+# List the packages that should be update here, one per line. Be sure to remove the '[]'
+base_system_packages_update:
+  - doscan
+  - ncat
+  - nmap
+

@@ -1,0 +1,49 @@
+---
+# tasks file for  isweluiz.ansible-package-manage
+
+- name: "Install, remove and update and packages"
+  block: 
+    - name: "{{ role_name }} :: Celan Cache"
+      include_tasks: 
+        file: clean-packages.yml
+      tags:
+        - clean
+        - never
+
+    - name: "{{ role_name }} :: Install Required Packages"
+      include_tasks: 
+        file: install-packages.yml
+      tags:
+        - install
+        - never        
+
+    - name: "{{ role_name }} :: Remove Required Packages"
+      include_tasks: 
+        file: remove-packages.yml
+      tags:
+        - remove   
+        - never        
+
+    - name: "{{ role_name }} :: Update Required Packages to the latest version"
+      include_tasks: 
+        file: update-packages.yml
+      tags:
+        - update
+        - never        
+
+    - name: "{{ role_name }} :: Upadte security packages"
+      include_tasks: 
+        file: update-security-packages.yml
+      tags:
+        - security
+        - never        
+
+  when: 
+    - voice_package_manage is defined and voice_package_manage|bool 
+    - ansible_facts['os_family'] == "Debian"
+
+  rescue:
+    - name: "{{ role_name }} :: Dump when errors"
+      debug:
+        msg: "I caught an error, check is there is some miss system configuration to fix it."
+
